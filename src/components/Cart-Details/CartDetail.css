@@ -1,0 +1,98 @@
+.btn-activity{
+    width: 100%;
+    background-color:#59a5ff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.detail-person-info-photo-section{
+    display: flex;
+    margin: 30px 0 15px 0;
+}
+
+.detail-person-info-photo-section img{
+    width: 50px;
+    border-radius: 30%;
+    margin-right: 10px;
+}
+
+.detail-person-info{
+    display: flex;
+    background-color: #97A0A7;
+    height: 60px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.details-section{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.break-time{
+    display: flex;
+    background-color: #97A0A7;
+    width: auto;
+    height: 60px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+
+.break-time p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: white;
+   width: 40px;
+   height: 40px;
+   margin: 0;
+   border-radius: 50%;
+   margin-right: 17px;
+   font-size: 14px;
+}
+
+.details-section-practice-time{
+    display: flex;
+    background-color: #97A0A7;
+    width: auto;
+    height: 60px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+.details-section-break-time{
+    display: flex;
+    background-color: #97A0A7;
+    width: auto;
+    height: 60px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
