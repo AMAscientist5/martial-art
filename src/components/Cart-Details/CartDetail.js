@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./CartDetail.css"
 import img from '../../image/test.jpg'
 import { ToastContainer, toast } from 'react-toastify';
@@ -10,6 +10,12 @@ const handleBreakTime = (selectedBreakTime) => {
   setBreaktime(selectedBreakTime)
  localStorage.setItem("break-time", selectedBreakTime)
 }
+
+useEffect(()=>{
+  const timeFromLocalStorage = localStorage.getItem('break-time');
+  console.log(timeFromLocalStorage);
+  setBreaktime(timeFromLocalStorage);
+},[])
 
 const notify = () => {
   toast.success('Everything is done', {
