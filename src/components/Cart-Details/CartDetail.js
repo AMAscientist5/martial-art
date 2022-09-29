@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
 import "./CartDetail.css"
 import img from '../../image/test.jpg'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const CartDetail = ({time}) => {
 const [breakTime, setBreaktime] = useState(0);
-
 const handleBreakTime = (selectedBreakTime) => {
   setBreaktime(selectedBreakTime)
  localStorage.setItem("break-time", selectedBreakTime)
+}
+
+const notify = () => {
+  toast.success('Everything is done', {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    });
 }
 
     return (
@@ -51,7 +64,8 @@ const handleBreakTime = (selectedBreakTime) => {
                     <p>Break Time:</p>
                     <p>{breakTime}m</p>
                 </div>
-                <button className='btn-activity'> activity</button>
+                <button onClick={notify} className='btn-activity'> activity</button>
+                <ToastContainer />
             </div>
         </div>
     );

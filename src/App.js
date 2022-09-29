@@ -3,8 +3,8 @@ import './App.css';
 import Main from './components/main/Main';
 import Question from './components/questions/Question';
 
-
 function App() {
+
   return (
     <div>
       <Main></Main>
