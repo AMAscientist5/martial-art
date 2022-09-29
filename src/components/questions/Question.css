@@ -1,0 +1,9 @@
+.question-container{
+    background-color: antiquewhite;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.question-heading{
+    text-align: center;
+}
