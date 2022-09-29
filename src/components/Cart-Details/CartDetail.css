@@ -57,7 +57,7 @@
 
 }
 
-.break-time p{
+.break-time button{
     display: flex;
     justify-content: center;
     align-items: center;

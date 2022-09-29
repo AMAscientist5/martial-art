@@ -15,14 +15,11 @@ const Main = () => {
   }, [])
 
     const handleAddToCart = (selectedCart) => {
-      console.log(selectedCart)
-      console.log(time)
-      if(!time){
+      // console.log(selectedCart)
+      // console.log(time)
+      let newTime = time + selectedCart;
 
-      }else{
-
-      }
-      setTime(selectedCart)
+      setTime(newTime)
   }
 
     return (

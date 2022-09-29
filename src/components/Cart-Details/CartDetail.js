@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./CartDetail.css"
 import img from '../../image/test.jpg'
 
 const CartDetail = ({time}) => {
-// console.log(time)
+const [breakTime, setBreaktime] = useState(0);
+
+const handleBreakTime = (selectedBreakTime) => {
+  setBreaktime(selectedBreakTime)
+ localStorage.setItem("break-time", selectedBreakTime)
+}
 
     return (
         <div>
@@ -30,10 +35,11 @@ const CartDetail = ({time}) => {
              </div> 
             <h2>Add A Break</h2>
             <div className="break-time">
-                 <p>5m</p>
-                 <p>10m</p>
-                 <p>15m</p>
-                 <p>20m</p>
+                 <button onClick={() => handleBreakTime(5)}>5m</button>
+                 <button onClick={() => handleBreakTime(10)}>10m</button>
+                 <button onClick={() => handleBreakTime(15)}>15m</button>
+                 <button onClick={() => handleBreakTime(20)}>20m</button>
+                 
              </div>
             <div>
                 <h2>practice details</h2>
@@ -42,8 +48,8 @@ const CartDetail = ({time}) => {
                    <p>{time}m</p>
                 </div>
                 <div className="details-section-break-time">
-                    <p>Break Time</p>
-                    <p>15m</p>
+                    <p>Break Time:</p>
+                    <p>{breakTime}m</p>
                 </div>
                 <button className='btn-activity'> activity</button>
             </div>
