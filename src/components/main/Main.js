@@ -9,10 +9,10 @@ const Main = () => {
     const [carts, setCart] = useState([])
 
     useEffect(() => {
-        fetch('data.json')
-        .then(res => res.json())
-        .then(data => setCart(data))
-    }, [])
+      fetch('data.json')
+      .then(res => res.json())
+      .then(data => setCart(data))
+  }, [])
 
     const handleAddToCart = (selectedCart) => {
       console.log(selectedCart)
