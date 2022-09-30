@@ -81,7 +81,7 @@
     border-radius: 5px;
     padding: 5px;
     box-sizing: border-box;
-    margin: 20px 0;
+    margin: 5px 0 20px 0;
 }
 .details-section-break-time{
     display: flex;
@@ -95,4 +95,15 @@
     padding: 5px;
     box-sizing: border-box;
     margin-bottom: 30px;
+}
+
+.break-time-heading{
+    margin-right: 20px;
+}
+
+.practice-time-heading{
+    margin-right: 20px;
+}
+.practice-heading{
+    margin-bottom: 5px;
 }

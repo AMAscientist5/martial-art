@@ -9,9 +9,9 @@ const Cart = ({cart, handleAddToCart}) => {
         <div className='cart'>
             <img src={img} alt="" />
           <div className='cart-info'>
-                <p className='cart-name'>{name}</p>
+                <h2 className='cart-name'>{name}</h2>
                 <p>{text}</p>
-                <p> Practice time: {time}m</p>
+                <h5 className="cart-practice-time"> Practice time: {time}m</h5>
           </div>
           <button onClick={() => handleAddToCart(time) } className='btn-cart' >
             <p className='btn-text'>Add to cart</p>

@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const CartDetail = ({time}) => {
 const [breakTime, setBreaktime] = useState(0);
+
 const handleBreakTime = (selectedBreakTime) => {
   setBreaktime(selectedBreakTime)
  localStorage.setItem("break-time", selectedBreakTime)
@@ -18,7 +19,7 @@ useEffect(()=>{
 },[])
 
 const notify = () => {
-  toast.success('Everything is done', {
+  toast.success('Everything have done!', {
     position: "top-center",
     autoClose: 5000,
     hideProgressBar: false,
@@ -61,13 +62,13 @@ const notify = () => {
                  
              </div>
             <div>
-                <h2>practice details</h2>
+                <h2 className="practice-heading">practice details</h2>
                 <div className="details-section-practice-time">
-                   <p>Practice Time: </p>
+                   <p className="practice-time-heading">Practice Time: </p>
                    <p>{time}m</p>
                 </div>
                 <div className="details-section-break-time">
-                    <p>Break Time:</p>
+                    <p className="break-time-heading">Break Time:</p> 
                     <p>{breakTime}m</p>
                 </div>
                 <button onClick={notify} className='btn-activity'> activity</button>
